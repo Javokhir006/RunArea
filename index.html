@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunArea - Fitness Tracker</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
+          crossorigin=""/>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <nav>
+            <h1>RunArea</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tracker-controls">
+            <div class="stats-container">
+                <div class="stat">
+                    <span class="label">Distance</span>
+                    <span id="distance">0.00</span> <small>km</small>
+                </div>
+                <div class="stat">
+                    <span class="label">Time</span>
+                    <span id="duration">00:00</span>
+                </div>
+            </div>
+            
+            <button id="start-btn" type="button">Start Run</button>
+        </section>
+
+        <div id="map"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 RunArea. Stay active.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" 
+            crossorigin=""></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
